@@ -51,87 +51,124 @@ This project is perfect for beginners and intermediate C programmers who want to
 1. **Clone the repository:**
 
 ```bash
-work flow
-Workflow
 
-The Student Result Management System follows this step-by-step workflow:
 
-Program Start
+🌟 Workflow of Student Result Management System
 
-When the program starts, it loads previously saved student records from results.txt using loadFromFile() (if the file exists).
+The Student Result Management System is designed to simplify the handling of student records with ease, accuracy, and persistence. Here’s how it works step by step:
 
-Initializes the system and displays the main menu.
+1️⃣ Program Start
 
-Main Menu Options
-The user is presented with a menu to perform various actions:
+When launched, the system automatically loads all existing student records from results.txt if available.
 
-Add Student
+Initializes the database in memory and displays the main menu for user interaction.
 
-Display All Students
+2️⃣ Main Menu Options
 
-Search Student
+The system provides a clear and intuitive menu with the following options:
 
-Update Student
+Add Student – Record a new student’s information.
 
-Delete Student
+Display All Students – View all student records in a formatted list.
 
-Save & Exit
+Search Student – Look up a student by their roll number.
 
-Adding a Student
+Update Student – Modify marks and recalculate results.
 
-User enters roll number and name.
+Delete Student – Remove a student record permanently.
 
-Enters marks for each subject.
+Save & Exit – Save all changes to the file and exit the program safely.
 
-System calculates:
+3️⃣ Adding a Student
 
-Total marks
+Enter Roll Number and Name.
+
+Input marks for all subjects.
+
+The system calculates automatically:
+
+✅ Total Marks
+
+✅ Percentage
+
+✅ Grade
+
+Student record is added to the in-memory array.
+
+4️⃣ Displaying Students
+
+Shows a clean and readable list of all students.
+
+Displays:
+
+Roll Number
+
+Name
+
+Total Marks
 
 Percentage
 
 Grade
 
-Student record is stored in the program's array.
+5️⃣ Searching a Student
 
-Displaying Students
+Enter a Roll Number to search.
 
-Shows a list of all students in a formatted manner.
+If found, the system displays all details of that student instantly.
 
-Displays roll number, name, total, percentage, and grade.
+If not found, an informative message is shown.
 
-Searching for a Student
+6️⃣ Updating Student Records
 
-User enters a roll number.
+Enter the Roll Number of the student to update.
 
-System searches the array and displays the corresponding student record if found.
-
-Updating Student Marks
-
-User enters the roll number of the student to update.
-
-New marks are entered for each subject.
+Update marks for each subject.
 
 Total, percentage, and grade are recalculated automatically.
 
-Deleting a Student
+Updated record is reflected immediately in memory.
 
-User enters the roll number.
+7️⃣ Deleting a Student
 
-The student record is removed from the array.
+Enter the Roll Number of the student to delete.
 
-Array elements are shifted to fill the gap.
+The record is removed permanently from the array.
 
-Saving & Exiting
+Array elements are rearranged to maintain order.
 
-All student records are written to results.txt using saveToFile().
+8️⃣ Saving & Exiting
 
-File stores roll number, name, marks, total, percentage, and grade.
+All student records are saved to results.txt.
 
-Data is now persistent and will be available when the program runs next time.
+Each record includes:
 
-Program End
+Roll Number
 
-User exits the program after saving.
+Name
 
-On the next run, the system loads previous data automatically.
-git clone https://github.com/khairbakshnoor-pixel/Student-Result-Management.git
+Subject Marks
+
+Total Marks
+
+Percentage
+
+Grade
+
+Data becomes persistent, available the next time the program runs.
+
+9️⃣ Program End
+
+User exits after saving.
+
+On next run, all previous data is loaded automatically, ensuring no loss of records.
+
+💡 Key Features:
+
+Uses structs and arrays to manage data efficiently.
+
+Implements file handling for persistent storage.
+
+Provides real-time calculations for total, percentage, and grade.
+
+Simple, user-friendly interface for easy operation.
