@@ -44,13 +44,6 @@ This project is perfect for beginners and intermediate C programmers who want to
 - Number of subjects: **5** (can be modified using the `SUBJECTS` macro)
 - Grades are calculated automatically based on percentages.
 
----
-
-## Installation & Running
-
-1. **Clone the repository:**
-
-```bash
 
 
 🌟 Workflow of Student Result Management System
