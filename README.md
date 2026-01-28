@@ -51,4 +51,87 @@ This project is perfect for beginners and intermediate C programmers who want to
 1. **Clone the repository:**
 
 ```bash
+work flow
+Workflow
+
+The Student Result Management System follows this step-by-step workflow:
+
+Program Start
+
+When the program starts, it loads previously saved student records from results.txt using loadFromFile() (if the file exists).
+
+Initializes the system and displays the main menu.
+
+Main Menu Options
+The user is presented with a menu to perform various actions:
+
+Add Student
+
+Display All Students
+
+Search Student
+
+Update Student
+
+Delete Student
+
+Save & Exit
+
+Adding a Student
+
+User enters roll number and name.
+
+Enters marks for each subject.
+
+System calculates:
+
+Total marks
+
+Percentage
+
+Grade
+
+Student record is stored in the program's array.
+
+Displaying Students
+
+Shows a list of all students in a formatted manner.
+
+Displays roll number, name, total, percentage, and grade.
+
+Searching for a Student
+
+User enters a roll number.
+
+System searches the array and displays the corresponding student record if found.
+
+Updating Student Marks
+
+User enters the roll number of the student to update.
+
+New marks are entered for each subject.
+
+Total, percentage, and grade are recalculated automatically.
+
+Deleting a Student
+
+User enters the roll number.
+
+The student record is removed from the array.
+
+Array elements are shifted to fill the gap.
+
+Saving & Exiting
+
+All student records are written to results.txt using saveToFile().
+
+File stores roll number, name, marks, total, percentage, and grade.
+
+Data is now persistent and will be available when the program runs next time.
+
+Program End
+
+User exits the program after saving.
+
+On the next run, the system loads previous data automatically.
 git clone https://github.com/khairbakshnoor-pixel/Student-Result-Management.git
